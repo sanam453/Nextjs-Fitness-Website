@@ -1,9 +1,14 @@
-import Image from "next/image";
-import Link from "next/link";
+import * as React from "react";
 
-// @components
+
+// ui components
 import Nav from "./nav";
+import Link from "next/link";
+import Image from "next/image";
 import { Button } from "./ui/button";
+
+// components
+import { MobileNav } from "./mobile-nav";
 
 export function Header() {
   return (
@@ -31,7 +36,9 @@ export function Header() {
         </div>
 
         {/** Mobile Nav */}
-        <div className="lg:hidden">mobile nav</div>
+        <div className="lg:hidden">
+        <MobileNav />  
+        </div>
       </div>
     </header>
   );
