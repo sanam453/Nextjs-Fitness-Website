@@ -33,7 +33,6 @@ const config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          accent: "#F09214",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
