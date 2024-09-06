@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jetbrainsMono.variable}>
+      <body className={`${jetbrainsMono.variable} bg-[url('/cover.png')] bg-no-repeat bg-cover w-full h-screen`}>
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>

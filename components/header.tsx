@@ -1,19 +1,16 @@
 import * as React from "react";
 
-
 // ui components
-import Nav from "./nav";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "./ui/button";
 
 // components
-import { MobileNav } from "./mobile-nav";
+import { Nav } from "./nav";
 
 export function Header() {
   return (
     <header className="py-8">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="max-w-[90rem] px-8 mx-auto flex justify-between items-center">
         {/** Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -24,20 +21,11 @@ export function Header() {
             className="h-6 w-6"
           />
           <h1 className="text-xl">
-            Fit<span className="text-primary-accent">H</span>ub
+            FitHub
           </h1>
         </Link>
-        {/** Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div>
           <Nav />
-          <Button size="sm" asChild variant="secondary">
-            <Link href="/login">Get Started</Link>
-          </Button>
-        </div>
-
-        {/** Mobile Nav */}
-        <div className="lg:hidden">
-        <MobileNav />  
         </div>
       </div>
     </header>
