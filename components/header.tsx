@@ -9,7 +9,7 @@ import { Nav } from "./nav";
 
 export function Header() {
   return (
-    <header className="py-8">
+    <header className="py-8 relative z-10">
       <div className="max-w-[90rem] px-8 mx-auto flex justify-between items-center">
         {/** Logo */}
         <Link href="/" className="flex items-center gap-2">
