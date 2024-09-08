@@ -67,3 +67,7 @@
     @apply font-primary text-primary-foreground;
   }
 }
+
+.bg-custom {
+  background-image: var(--bg-image);
+}
