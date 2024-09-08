@@ -54,6 +54,8 @@ export function Nav() {
           />
           <h1 className="text-xl text-white">FitHub</h1>
         </Link>
+
+        {/** links */}
         <nav className="flex flex-col space-y-4 mt-10">
           {links.map((link, key) => (
             <Button
