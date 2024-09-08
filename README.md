@@ -14,7 +14,7 @@ First, run the development server:
 ```bash
 npm run dev
 # or
-yarn dev<img width="1800" alt="Screenshot 2024-09-08 at 4 33 03 PM" src="https://github.com/user-attachments/assets/7db26f20-f4ba-4058-ba23-ed35bf14b001">
+yarn dev
 
 # or
 pnpm dev
