@@ -6,7 +6,7 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 // icons
-import { Flame } from "lucide-react";
+import { Flame, LandPlot } from "lucide-react";
 
 // charts import
 import dynamic from "next/dynamic";
@@ -117,8 +117,8 @@ export function DistanceCard() {
     <Card className="bg-[#010715] bg-opacity-40 !border-slate-400 overflow-hidden">
       <CardHeader className="flex flex-row justify-between">
         <div className="flex gap-3">
-          <Flame className="text-white" />
-          <CardTitle className="text-xl font-bold text-white">Steps</CardTitle>
+          <LandPlot className="text-white" />
+          <CardTitle className="text-xl font-bold text-white">Distance</CardTitle>
         </div>
         <CardTitle className="text-xl font-bold text-white">400 kcal</CardTitle>
       </CardHeader>
@@ -128,7 +128,7 @@ export function DistanceCard() {
           options={AreaChart}
           series={AreaChartSeries}
           type="area"
-          width="650"
+          width=""
           height={220}
         />
       </CardContent>

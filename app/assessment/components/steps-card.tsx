@@ -117,7 +117,6 @@ export function StepsCard() {
           options={BarChart}
           series={BarChartSeries}
           type="bar"
-          width="650"
           height={220}
         />
       </CardContent>

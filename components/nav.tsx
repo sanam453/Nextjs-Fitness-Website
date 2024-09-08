@@ -56,15 +56,13 @@ export function Nav() {
         </Link>
         <nav className="flex flex-col space-y-4 mt-10">
           {links.map((link, key) => (
-            <Link
+            <Button
               key={key}
-              href={link.path}
-              className={`${
-                link.path === pathname && "text-white opacity-90"
-              } capitalize hover:opacity-100 transition-all`}
+              variant={`${link.path === pathname ? "secondary" : "ghost"}`}
+              className="max-w-fit mx-auto"
             >
-              <Button variant="ghost">{link.name}</Button>
-            </Link>
+              <Link href={link.path}>{link.name}</Link>
+            </Button>
           ))}
         </nav>
       </SheetContent>

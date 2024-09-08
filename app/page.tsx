@@ -6,7 +6,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-[url('/cover.png')] bg-no-repeat bg-cover w-full h-screen">
         <div className="text-center grid place-items-center h-screen">
           <div>
-            <h1 className="md:text-7xl text-4xl">More Confident</h1>
+            <h1 className="md:text-7xl text-4xl font-bold">More Confident</h1>
             <p className="text-center max-w-4xl mt-4 mb-10">
               Embracing a consistent workout routine not only enhances your
               physical appearance but also strengthens your mental resilience,
