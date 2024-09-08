@@ -17,7 +17,7 @@ export default function Home() {
                 size="lg"
                 className="bg-white opacity-90 text-gray-900 hover:opacity-100 hover:bg-white transition-opacity"
               >
-                Start Now
+                Start Now!
               </Button>
               <Button size="lg" className="border">
                 Download App
